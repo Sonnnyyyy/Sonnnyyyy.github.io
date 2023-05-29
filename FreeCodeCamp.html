@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="FreeCodeCamp.css">
+   
+    <title>INDEX</title>
+</head>
+
+    <header class="header">
+        <div class="Jason"><img src="JasonPic.png">  </div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>    
+            <li> <a href="Events.html">Events</a></li>
+            <li> <a href="#top">FreeCodeCamp</a></li>
+        </ul>
+        </header> 
+        <body>
+
+        <div class="welcome-section"><h1>You can view the codes that i used on my FreeCodeCamp Responsive Web Design Projects Below.</h1></div>
+
+        
+
+<div class="container">
+    <h1><a id="survey">Survey Form</a></h1>
+<div class="box-img">
+    <img src="1.png">
+</div>
+<div class="spacer"></div>
+<div class="code-box">
+
+    <div class="code1">
+            <h2>HTML</h2>
+            <code>&lt;!DOCTYPE html&gt;<br> 
+        &lt;html lang=&quot;en&quot;&gt;<br><br>
+        &lt;head&gt;<br><br>
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;<br><br>
+          &lt;meta charset=&quot;UTF-8&quot;&gt;<br><br>
+          &lt;title&gt; Survey Form &lt;/title&gt;<br><br>
+          &lt;/head&gt;<br><br>
+          &lt;div class=&quot;top&quot;&gt;<br><br>
+        &lt;h1 id=&quot;title&quot;&gt; Open Source Survey &lt;/h1&gt;<br><br>
+        &lt;p id=&quot;description&quot;&gt; This is a survey for open source/public source user &lt;/p&gt; &lt;/div&gt;<br><br>
+        
+        
+        
+        &lt;form id=&quot;survey-form&quot;&gt;<br><br>
+          &lt;div class=&quot;group&quot;&gt;<br><br>
+          &lt;label for=&quot;name&quot; id=&quot;name-label&quot;&gt;<br><br>
+            Name &lt;/label&gt;<br><br>
+            &lt;input class=&quot;form-control&quot; name=&quot;name&quot; id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot;Enter your Name&quot; required &gt;&lt;/input&gt;  &lt;/div&gt;
+            <br><br>
+        
+        
+              &lt;div class=&quot;group&quot;&gt;<br><br>
+            &lt;label for=&quot;email&quot; id=&quot;email-label&quot;&gt; Email &lt;/label&gt;<br><br>
+            &lt;input placeholder=&quot;Enter your Email&quot;class=&quot;form-control&quot; id=&quot;email&quot; type=&quot;email&quot; required&gt; &lt;/input&gt; &lt;/div&gt;
+              <br><br>
+        
+        
+        
+              &lt;div class=&quot;group&quot;&gt;<br><br>
+              &lt;label for=&quot;number&quot; id=&quot;number-label&quot;&gt;Age (Optional) &lt;/label&gt;<br><br>
+                &lt;input placeholder=&quot;Enter your Age&quot;class=&quot;form-control&quot; name=&quot;age&quot; min=&quot;12&quot; max=&quot;100&quot; id=&quot;number&quot; type=&quot;number&quot;&gt;&lt;/input&gt;
+               &lt;/div&gt; <Br><br>
+                <div class=&quot;group&quot;&gt;<br><br>
+  &lt;p&gt; What is your current role? &lt;/p&gt;
+  &lt;select id=&quot;dropdown&quot; name=&quot;role&quot; class=&quot;form-control&quot; required&gt; <br><br>
+    &lt;option disabled selected value&gt;Select&lt;/option&gt;<br><br>
+    &lt;option value=&quot;student&quot;&gt;Student&lt;/option&gt;<br><br>
+    &lt;option value=&quot;full-learner&quot;&gt;Full time Learner&lt;/option&gt;<br><br>
+    &lt;option value=&quot;full-job&quot;&gt;Full time Job&lt;/option&gt;<br><br>
+    &lt;option value=&quot;PreferNo&quot;&gt;Prefer not to say&lt;/option&gt;<br><br>
+    &lt;option value=&quot;other&quot;&gt;Other&lt;/option&gt;<br><br>
+  &lt;/select&gt; &lt;/div&gt;<br><br>
+
+
+&lt;div class=&quot;group&quot;&gt;<br><br>
+  &lt;p&gt; Do you use Open Source Software (Cost-free Software)? <br><br>&lt;/p&gt;<br><br>
+  &lt;label&gt;<br><br>
+    &lt;input name=&quot;user-recommend&quot; type=&quot;radio&quot; value=&quot;yes&quot; class=&quot;input-radio&quot; checked&gt;Yes&lt;/label&gt;<br><br>
+  &lt;label&gt;&lt;input name=&quot;user-recommend&quot; type=&quot;radio&quot; value=&quot;no&quot; class=&quot;input-radio&quot;&gt;no&lt;/label&gt;<br><br>
+  &lt;input name=&quot;user-recommend&quot; type=&quot;radio&quot; value=&quot;sometimes&quot; class=&quot;input-radio&quot;&gt;Sometimes&lt;/label&gt;   &lt;/div&gt;<br><br>
+
+
+&lt;div class=&quot;group&quot;&gt;<br><br>
+  &lt;p&gt; Would you recommend Open Source Software to a friend? &lt;/p&gt; <br><br>
+  &lt;select id=&quot;drop-down&quot; name=&quot;recommend&quot; class=&quot;form-control&quot; required&gt;<br><br>
+    &lt;option disabled selected value&gt; Select &lt;/option&gt;<br><br>
+    &lt;option value=&quot;yes&quot;&gt;yes&lt;/option&gt;<br><br>
+    &lt;option value=&quot;no&quot;&gt;no&lt;/option&gt;<br><br>
+    &lt;option value=&quot;maybe&quot;&gt;maybe&lt;/option&gt;<br><br>
+  &lt;/select&gt; &lt;/div&gt;<br><br>
+  &lt;div class=&quot;group&quot;&gt;<br><Br>
+  &lt;p&gt; Why do you use Open Source Software? (check all that apply)&lt;/p&gt;<br><Br>
+  &lt;label&gt;&lt;input value=&quot;For School purposes&quot; name=&quot;prefer&quot; type=&quot;checkbox&quot; class=&quot;input-checkbox&quot;&gt; For School Purposes &lt;/input&gt; &lt;/label&gt;<br><Br>
+  &lt;label&gt;&lt;input value=&quot;For Research purposes&quot; name=&quot;prefer&quot; type=&quot;checkbox&quot; class=&quot;input-checkbox&quot;&gt; For Research Purposes &lt;/input&gt; &lt;/label&gt;<br><Br>
+  &lt;label&gt;&lt;input value=&quot;To learn&quot; name=&quot;prefer&quot; type=&quot;checkbox&quot; class=&quot;input-checkbox&quot;&gt; For Learning Purposes &lt;/input&gt; &lt;/label&gt;<br><Br>
+  &lt;label&gt;&lt;input value=&quot;Just Trying Out&quot; name=&quot;prefer&quot; type=&quot;checkbox&quot; class=&quot;input-checkbox&quot;&gt; Just Trying Out &lt;/input&gt; &lt;/label&gt;<br><Br>
+&lt;/div&gt;<br><Br>
+
+
+&lt;div class=&quot;group&quot;&gt;<br><Br>
+  &lt;p&gt; Any comments about this survey?&lt;/p&gt;<br><Br>
+  &lt;textarea id=&quot;comments&quot; class=&quot;input-textarea&quot; name=&quot;comment&quot; placeholder=&quot;Enter Comment here...&quot;&gt;<br><Br>
+  &lt;/textarea&gt; &lt;/div&gt;<br><Br>
+
+
+&lt;div class=&quot;group&quot;&gt;<br><Br>
+  &lt;button type=&quot;submit&quot; id=&quot;submit&quot; class=&quot;submit-button&quot;&gt;Submit&lt;/button&gt;<br><Br>
+&lt;/div&gt;<br><Br>
+&lt;/form&gt;<br><Br>
+&lt;/html&gt;<br><Br>
+<br><Br>
+
+               
+             
+            
+            </code>
+</div>
+</div>
+<div class="code2">
+    <h2>CSS</h2><code>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');<br><br>
+
+:root {<br><br>
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}<br><br>
+
+
+body {<br><br>
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}<br><br>
+
+body::before {<br><br>
+  content: '';<Br><Br>
+  position: fixed;<Br><Br>
+  top: 0;<Br><Br>
+  left: 0;<Br><Br>
+  height: 100%;<Br><Br>
+  width: 100%;<Br><Br>
+  z-index: -1;<Br><Br>
+  background: var(--color-darkblue);<Br><Br>
+  background-image: linear-gradient(<Br><Br>
+      115deg,<Br><Br>
+      rgba(58, 58, 158, 0.8),<Br><Br>
+      rgba(136, 136, 206, 0.7)<Br><Br>
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);<Br><Br>
+  background-size: cover;<Br><Br>
+  background-repeat: no-repeat;<Br><Br>
+  background-position: center;<Br><Br>
+}<br><br>
+.top {
+  text-align:center;<Br><Br>
+  margin-top:10%;<Br><Br>
+  margin-bottom: 10%;<Br><Br>
+}<br><br>
+h1 {
+  font-weight: 400;<Br><Br>
+  line-height: 1.2;<Br><Br>
+}<br><br>
+
+p {
+  font-size: 1.125rem;<Br><Br>
+}<br><br>
+
+h1,
+p {
+  margin-top: 0;<Br><Br>
+  margin-bottom: 0.5rem;<Br><Br>
+}<br><br>
+
+label {
+  display: flex;<Br><Br>
+  align-items: center;<Br><Br>
+  font-size: 1.125rem;<Br><Br>
+  margin-bottom: 0.5rem;<Br><Br>
+}<br><br>
+
+input,<Br><Br>
+button,<Br><Br>
+select,<Br><Br>
+textarea {
+  margin: 0;<Br><Br>
+  font-family: inherit;<Br><Br>
+  font-size: inherit;<Br><Br>
+  line-height: inherit;<Br><Br>
+}<br><br>
+
+button {<Br><Br>
+  border: none;<Br><Br>
+}<br><br>
+
+.container {<Br><Br>
+  width: 100%;<Br><Br>
+  margin: 3.125rem auto 0 auto;<Br><Br>
+}
+
+@media (min-width: 576px) {<Br><Br>
+  .container {<Br><Br>
+    max-width: 540px;<Br><Br>
+  }
+}<br><br>
+
+@media (min-width: 768px) {<Br><Br>
+  .container {<Br><Br>
+    max-width: 720px;<Br><Br>
+  }
+}<br><br>
+
+.header {<Br><Br>
+  padding: 0 0.625rem;<Br><Br>
+  margin-bottom: 1.875rem;<Br><Br>
+}<br><br>
+
+.description {<Br><Br>
+  font-style: italic;<Br><Br>
+  font-weight: 200;<Br><Br>
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);<Br><Br>
+}<br><br>
+.text-center {<Br><Br>
+  text-align: center;<Br><Br>
+}<br><br>
+        
+        
+
+
+        <br><br>
+        form {<br>
+        background: var(--color-darkblue-alpha);<br>
+        padding: 2.5rem 0.625rem;<br>
+        border-radius: 0.25rem;<br>
+        margin-left:20%;<br>
+        margin-right: 20%;<br>
+    }<br><br>
+      
+      @media (min-width: 480px) {<br>
+        form {<br>
+          padding: 2.5rem;
+        }<br>
+      }<br><br>
+      
+      .form-group {<br>
+        margin: 0 auto 1.25rem auto;<br>
+        padding: 0.25rem;<br>
+      }<br><br>
+      
+      .form-control {<br>
+        display: block;<br>
+        width: 100%;<br>
+        height: 2.375rem;<br>
+        padding: 0.375rem 0.75rem;<br>
+        color: #495057;<br>
+        background-color: #fff;<br>
+        background-clip: padding-box;<br>
+        border: 1px solid #ced4da;<br>
+        border-radius: 0.25rem;<br>
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;<br>
+      }<br><br>
+      
+      .form-control:focus {<br>
+        border-color: #80bdff;<br>
+        outline: 0;<br>
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);<br>
+      }<br><br>
+      
+      .input-radio,<br>
+      .input-checkbox {
+        display: inline-block;<br>
+        margin-right: 0.625rem;<br>
+        min-height: 1.25rem;<br>
+        min-width: 1.25rem;<br>
+      }<br><br>
+      
+      .input-textarea {<br>
+        min-height: 120px;<br>
+        width: 100%;<br>
+        padding: 0.625rem;
+        resize: vertical;<br>
+      }<br><br>
+      
+      .submit-button {<br>
+        margin-top: 25px;<br>
+        display: block;<br>
+        width: 100%;<br>
+        padding: 0.75rem;<br>
+        background: var(--color-green);<br>
+        color: inherit;<br>
+        border-radius: 2px;<br>
+        cursor: pointer;<br>
+      }<br><br></code>
+</div>
+
+</div>
+<div class="spacer"></div>
+<div class="spacer-line"></div>
+<div class="spacer3"></div>
+
+<div class="container">
+    <h1><a id="tribute">Tribute Page</a></h1>
+    <div class="box-img"><img src="2.png">  </div>
+    <div class="spacer"></div>
+    <div class="code-box">
+      <div class="code1">
+        <h2>HTML</h2>
+        <code>&lt;!DOCTYPE html&gt;<br><br>
+          &lt;html lang=&quot;en&quot;&gt;<br><br>
+            &lt;head&gt;<br><br>
+              &lt;meta charset=&quot;UTF-8&quot;&gt;<br><br>
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;<br><br>
+              &lt;title id=&quot;title&quot;&gt;tribute&lt;/title&gt;<br><br>
+            &lt;/head&gt;<br><br>
+            &lt;body&gt;<br><br>
+              &lt;div class=&quot;header&quot;&gt;&lt;div class=&quot;h1&quot;&gt;The image below are the ingredients of Beef Kare Kare.&lt;/div&gt; &lt;/div&gt;<br><br>
+            &lt;/div&gt;<br><br>
+              &lt;main id=&quot;main&quot;&gt;<br><br>
+                &lt;div class=&quot;box&quot;&gt;<br><br>
+                  &lt;div class=&quot;container1&quot;&gt;<br><br>
+                    &lt;figure id=&quot;img-div&quot;&gt;<br><br>
+                      &lt;center&gt;<br><br>
+                        &lt;img width=&quot;700&quot; id=&quot;image&quot; src=&quot;https://www.jozmahal.com/wp-content/uploads/2022/09/beef-kare-kare-ingredients.jpg&quot;&gt;<br><br>
+                        &lt;div id=&quot;img-caption&quot;&gt;&amp;nbsp;&lt;/div&gt;<br><br>
+                      &lt;/center&gt;<br><br>
+                    &lt;/figure&gt;<br><br>
+                  &lt;/div&gt;<br><br>
+                &lt;/div&gt;<br><br>
+                &lt;div class=&quot;box2&quot;&gt;<br><br>
+                  &lt;div class=&quot;description&quot;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/div&gt;<br><br>
+                  &lt;div class=&quot;p&quot;&gt;<br><br>
+                    &lt;div id=&quot;tribute-info&quot;&gt;<br><br>
+                     .
+                      &lt;center&gt;<br><br>
+                        &lt;a target=&quot;_blank&quot; id=&quot;tribute-link&quot; href=&quot;https://a.cdn-hotels.com/gdcs/production0/d1513/35c1c89e-408c-4449-9abe-f109068f40c0.jpg?impolicy=fcrop&amp;w=800&amp;h=533&amp;q=medium&quot;&gt;&lt;/a&gt;<br><br>
+                      &lt;/center&gt;<br><br>
+                    &lt;/div&gt;<br><br>
+                  &lt;/div&gt;<br><br>
+                &lt;/div&gt;<br><br>
+              &lt;/main&gt;<br><br>
+              &lt;div class=&quot;box3&quot;&gt;<br><br>
+              &lt;center&gt;<br><br>
+              &lt;table border=&quot;10px&quot;&gt;<br><br>
+                &lt;thead&gt;<br><br>
+                  &lt;tr&gt;<br><br>
+                    &lt;th colspan=&quot;7&quot;&gt;&amp;nbsp;'Ingredients&lt;/th&gt;<br><br>
+                  &lt;/tr&gt;<br><br>
+                &lt;/thead&gt;<br><br>
+                &lt;tbody&gt;<br><br>
+                  &lt;tr&gt;   <br><br>
+                    &lt;tr&gt; &lt;td&gt;1 &lt;/Td&gt;&lt;/tr&gt;<br><br>
+                    &lt;tr&gt;&lt;td&gt;1 bunch bok choy, cut into bite-sized pieces&lt;/td&gt;&lt;/tr&gt;<br><br>
+                    &lt;td&gt;1 kg beef tripe, cut into bite-sized pieces&lt;/td&gt;<br><br>
+                    &lt;tr&gt; &lt;td&gt;1 tbsp annatto powder or paprika&lt;/td&gt;&lt;/tr<br><br>
+                    &lt;td&gt;2 eggplants, cut into cubes&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;   <br><br>
+          &lt;tr&gt;&lt;td&gt;1 lb green beans, trimmed&lt;/td&gt;&lt;/tr&gt;   <br><br>  
+          &lt;tr&gt;&lt;td&gt;5 cloves garlic, minced&lt;/td&gt;&lt;/tr&gt;<br><br>
+          &lt;tr&gt;&lt;td&gt;1 cup sunflower butter&lt;/td&gt;&lt;/tr&gt;<br><br>
+        &lt;tr&gt;<br><br>
+         &lt;td&gt;1/2 cup peanut butter&lt;/td&gt; &lt;/tr&gt;&lt;tr&gt;<br><br>
+          &lt;td&gt;2 tbsp cooking oil&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;<br><br>
+          &lt;td&gt;1 onion, chopped&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;   <br><br> 
+          &lt;td&gt;1/4 cup vinegar&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;  <br><br>       
+         &lt;td&gt;2 tbsp soy sauce&lt;/td&gt;&lt;/tr&gt;<br><br>
+          &lt;td&gt;4 cups water&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt; <br><br>
+        &lt;/tr&gt;<br><br>
+      &lt;/tbody&gt;<br><br>
+&lt;/table&gt; &lt;/div&gt;<br><br>
+
+&lt;div class="box4"&gt;<br><br>
+&lt;table border="10px" class="justify"&gt; <br><br>
+  &lt;thead&gt;<br><br>
+    &lt;tr&gt;<br><br>
+      &lt;th&gt; &lt;center&gt;Instructions&lt;/center&gt;&lt;/th&gt;<br><br>
+    &lt;/tr&gt;<br><br>
+  &lt;/thead&gt;<br><br>
+  &lt;tbody&gt;<br><br>
+    &lt;tr&gt;<br><br>
+      &lt;td&gt;1. .&lt;/td&gt;
+    &lt;/tr&gt;<br><br>
+    &lt;tr&gt;<br><br>
+      &lt;td&gt;2. .&lt;/td&gt;
+    &lt;/tr&gt;<br><br>
+    &lt;tr&gt;<br><br>
+     &lt;td&gt;3. &lt;/td&gt;
+    &lt;/tr&gt;<br><br>
+    &lt;tr&gt;<br><br>
+      &lt;td&gt;4.      &lt;/td&gt;<br><br>
+    &lt;/tr&gt;<br><br>
+    &lt;tr&gt;<br><br>
+      &lt;td&gt;5. Add .&lt;/td&gt;<br><br>
+    &lt;/tr&gt;<br><br>
+    &lt;tr&gt;<br><br>
+      &lt;td&gt;6.Serve the beef kare-kare hot with steamed rice.&lt;/td&gt;<br><br>
+    &lt;/tr&gt;<br><br>
+  &lt;/tbody&gt;<br><br>
+&lt;/table&gt;<br><br>
+&lt;/div&gt;<br><br>
+    &lt;/center&gt;<br><br>
+
+&lt;br&gt;<br><br>
+&lt;footer&gt;&lt;b&gt; @Jason Iso&lt;/b&gt;&lt;/footer&gt;<br><br>
+&lt;/body&gt;<br><br>
+&lt;/html&gt;<br><br>
+
+          </code>
+      </div>
+      <div class="code2">
+        <h2>CSS</h2>
+        <code>
+          img {<br><Br>
+            display:block; <br><Br>
+            align-items:center; <br><Br>
+            max-width:100%;<br><Br>
+           }<br><Br>
+           .box {<br><Br>
+            background-color: ;  margin-left: 20%; margin-right: 20%;<br><Br>
+            margin-top: 10%; padding: 60px;<br><Br>
+          }<br><Br>
+          .box2{<br><Br>
+           padding: 60px;  margin-left: 20%; margin-right: 20%; margin-top: 10px;<br><Br>
+          }<br><Br>
+          .box3{<br><Br>
+           padding: 60px;  margin-left: 20%; margin-right: 20%; margin-top: 10px;<br><Br>
+          }<br><Br>
+          .box4{<br><Br>
+           padding: 60px;  margin-left: 20%; margin-right: 20%; margin-top: 10px;<br><Br>
+          }<br><Br>
+           .header {<br><Br>
+           justify-content:center;<br><Br>
+           display:flex;<br><Br>
+             top:0; <br><Br>
+             left:0;<br><Br>
+             right:0;<br><Br>
+             padding:30px;<br><Br>
+             position:absolute;<br><Br>
+             text-align:center;<br><Br>
+           }<br><Br>
+           body {<br><Br>
+            min-height: 100vh ;<br><Br>
+            display: flex;<br><Br>
+            flex-direction: column; margin: 0;<br><Br>
+           }<br><Br>
+           .h1{<br><Br>
+            font-family:'Times New Roman';<br><Br>
+            font-size: 30px;<br><Br>
+           }
+           .container1{<br><Br>
+            margin-bottom:10px;<br><Br>
+            margin-top:5px;<br><Br>
+           }<br><Br>
+           .p{<br><Br>
+          text-align:justify;<br><Br>
+          font-size:large;<br><Br>
+          line-height: 2;<br><Br>
+           }<br><Br>
+          .description {<br><Br>
+            margin-top: 3%;;<br><Br>
+            text-align: center;<br><Br>
+            font-weight: 100;<br><Br>
+          font-size: 25px;;<br><Br>
+          }<br><Br>
+          table{<br><Br>
+            font-size: 19px;<br><Br>
+            text-align: center;<br><Br>
+            background-color: beige;<br><Br>
+          }<br><Br>
+          .justify{<br><Br>
+            text-align: justify;<br><Br>
+          }<br><Br>
+          footer{
+            background-color: rgb(240, 227, 209);<br><Br>
+            padding: 20px; <br><Br>
+            font-size: larger;<br><Br>
+            position:;<br><Br>
+            left: 0;<br><Br>
+            right: 0; bottom: 0;   text-align: center;     margin: 0;<br><Br>
+          
+           
+          
+          }<br><Br>
+        </code>
+      </div>
+    </div>
+</div>
+
+
+<div class="spacer"></div>
+<div class="spacer-line"></div>
+<div class="spacer3"></div>
+
+
+<div class="container">
+  <h1><a id="technical">Technical Documentation Page</a></h1>
+  <div class="box-img">
+  <img src="3.png">
+</div>
+<div class="spacer"></div>
+
+<div class="code-box">
+<div class="code1">
+  <h2>HTML</h2>
+  <code>&lt;!DOCTYPE html&gt;<br><br>
+    &lt;html lang="en"&gt;<br><br>
+    &lt;head&gt;<br><br>
+        &lt;meta charset="UTF-8"&gt;<br><br>
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br><br>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br><br>
+        &lt;link rel="stylesheet" href="styles.css"&gt;<br><br>
+        &lt;title&gt;3rd Certificate&lt;/title&gt;<br><br>
+    &lt;/head&gt;<br><br>
+    &lt;body&gt;<br><br>
+        &lt;nav id="navbar"&gt;&lt;header class="Header"&gt;&lt;b&gt;Programming Languages&lt;/b&gt;&lt;/header&gt;<br><br>
+            &lt;ul&gt;<br><br>
+            &lt;li&gt;&lt;a href="#Introduction" class="nav-link"&gt;Introduction&lt;/a&gt;&lt;/li&gt;<br><br>
+            &lt;li&gt;&lt;a href="#JavaScript" class="nav-link"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;<br><br>
+            &lt;li&gt;&lt;a href="#Phyton" class="nav-link"&gt;Phyton&lt;/a&gt;&lt;/li&gt;<br><br>
+            &lt;li&gt;&lt;a href="#Java" class="nav-link"&gt;Java&lt;/a&gt;&lt;/li&gt;<br><br>
+            &lt;li&gt; &lt;a href="#C++" class="nav-link"&gt;C++&lt;/a&gt;&lt;/li&gt;<br><br>
+    &lt;/ul&gt;<br><br>
+        &lt;/nav&gt;<br><br>
+
+        &lt;div class="container"&gt;<br><br>
+        &lt;main id="main-doc"&gt; <br><br>
+        &lt;section id="Introduction" class="main-section below"&gt;&lt;header class="introduction"&gt;Introduction&lt;/header&gt; &lt;p&gt;&lt;/p&gt;
+       <br><br> &lt;li&gt;&lt;</code><br><br>
+       &lt;p1 class="p1"&gt;Enter your description here&lt;br&gt;&lt;br&gt;Enter your description here.&lt;/p1&gt;<br><br>
+&lt;/li&gt;<br><br>
+&lt;/section&gt; <br><br>
+
+&lt;section id="Phyton" class="main-section below"&gt;&lt;header&gt;Phyton&lt;/header&gt;    <br><br>    &lt;p&gt;&lt;/p&gt;<br><br>
+   &lt;li&gt; &lt;p1 class="p1"&gt;Enter Description here&lt;/p1&gt;<br><br>
+&lt;/li&gt;<br><br>
+&lt;/section&gt;<br><br>
+
+&lt;section id="Java" class="main-section below"&gt;&lt;header&gt;Java&lt;/header&gt;     <br><br>   &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt;
+    <br><br>   &lt;li&gt;&lt;p1 class="p1"&gt;Enter your description here&lt;/p1&gt;<br><br>
+&lt;/li&gt;<br><br>
+&lt;/section&gt;<br><br>
+
+&lt;section class="main-section below"id="C++"&gt;&lt;header&gt;C++&lt;/header&gt; &lt;code&gt;&lt;/code&gt;&lt;code&gt;&lt;/code&gt;&lt;code&gt;&lt;/code&gt;&lt;code&gt;&lt;/code&gt;&lt;code&gt;&lt;/code&gt;
+ <br><br>  &lt;li&gt;&lt;p1 class="p1"&gt;Enter your description here<br><br>
+        &lt;/p1&gt;<br><br>
+        &lt;/li&gt;<br><br>
+&lt;/section&gt; <br><br>
+&lt;/body&gt;
+&lt;/main&gt;
+&lt;/html&gt;
+<br><br>
+       
+</div>
+
+<div class="code2">
+  <h2>CSS</h2>
+  <code>@media {<br><br>
+html,<br><br>
+body {<br><br>
+  min-width: 290px;<br><br>
+  color: #4d4e53;<br><br>
+  font-family:sans-serif;<br><br>
+  line-height: 1.5;<br><br>
+  list-style-type: none;<br><br>
+  background-color:beige;<br><br>
+  color:black;<br><br>
+}<br><br>
+#navbar {<br><br>
+  position: fixed;<br><br>
+  min-width: 290px;<br><br>
+  top: 0px;<br><br>
+  left: 0px;<br><br>
+  width: 300px;<br><br>
+  height: 100%;<br><br>
+  border-right: solid;<br><br>
+  border-color: rgba(0, 22, 22, 0.4);<br><br>
+  }<br><br>
+  #navbar header{<br><br>
+    margin-left:5%;<br><br>
+    margin-top: 3%;<br><br>
+    font-size: 20px;<br><br>
+    color:black;<br><br>
+    padding: 10px;<br><br>
+  }<br><br>
+#navbar ul {<br><br>
+  height: 100%;<br><br>
+  padding: 0;<br><br>
+  overflow-y: auto;<br><br>
+  overflow-x: hidden;<br><br>
+}<br><br>
+#navbar li {  <br><br>
+  border-top: 1px solid;<br><br>
+  color: #4d4e53;  width: 100%;<br><br>
+  list-style: none;<br><br>
+  position: relative;<br><br>
+  padding:25px;<br><br>
+  border-bottom: 1px solid black;<br><br>
+}<br><br>
+#navbar a {<br><br>
+  display: block;<br><br>
+  padding: 10px 30px;<br><br>
+  color: #4d4f53;<br><br>
+  text-decoration: none;<br><br>
+  cursor: pointer;<br><br>
+  color:black;<br><br>
+  margin-left: 13%;<br><br>
+}<br><br>
+#navbar li:hover{<br><br>
+  transition: all 0.3s ease-in-out;<br><br>
+  background-color: green;<br><br>
+}<br><br>
+#navbar a:hover{<br><br>
+  color:white;<br><br>
+}<br><br>
+#main-doc {<br><br>
+  position: absolute;<br><br>
+  margin-left: 310px;<br><br>
+  padding: 20px;<br><br>
+  margin-bottom: 110px;<br><br>
+  text-align: justify;<br><br>
+}<br><br>
+
+.container header{<br><br>
+  font-size: 50px;<br><br>
+  font-family: 'Times New Roman', Times, serif;  margin-bottom: -10px;  margin-left: 3%;<br><br>
+}<br><br>
+.container .p1 {<br><br>
+  margin-left: 2%;<br><br>
+}<br><br>
+
+.container .introduction{<br><br>
+  margin-left: 3%;<br><br>
+  margin-bottom: -10px;<br><br>
+}<br><br>
+.main-section {<br><br>
+  margin-bottom: 11%;<br><br>
+  margin-top: -3%;<br><br>
+}<br><br>
+.container{<br><br>
+  padding:50px; font-family: 'Times New Roman', Times, serif ; <br><br>
+}<br><br>
+
+}<br><br></code>
+</div>
+</div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer-line"></div>
+<div class="spacer3"></div>
+
+<div class="container">
+  <h1><a id="product">Product Landing Page</a></h1>
+  <div class="box-img"><img src="4.png"></div>
+  <div class="spacer"></div>
+  <div class="code-box">
+    <div class="code1">
+      <h2>HTML</h2>
+      <code>&lt;!DOCTYPE html&gt;
+       <br><br> &lt;html lang="en"&gt;
+      <br><br>  &lt;head&gt;
+        <br><br>    &lt;meta charset="UTF-8"&gt;
+        <br><br>    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+         <br><br>   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+         <br><br>   &lt;title&gt;4th certificate&lt;/title&gt;
+         <br><br>   &lt;link rel="stylesheet" href="styles.css"&gt;
+       <br><br> &lt;/head&gt;
+       <br><br> &lt;header id="header"&gt;
+       <br><br>     &lt;img 
+       <br><br>       id="header-img"
+        <br><br>      src="https://logos.textgiraffe.com/logos/logo-name/Jason-designstyle-summer-m.png"&gt; 
+        <br><br>      &lt;nav id="nav-bar"&gt;
+         <br><br>   &lt;ul&gt;
+        <br><br>        &lt;li&gt;&lt;a class="nav-link" href="#Science"&gt;Science&lt;/a&gt;&lt;/li&gt;
+        <br><br>        &lt;li&gt;&lt;a class="nav-link" href="#Math"&gt;Mathematics&lt;/a&gt;&lt;/li&gt;
+        <br><br>        &lt;li&gt;&lt;a class="nav-link" href="#Physics"&gt;Physical Science&lt;/a&gt;&lt;/li&gt;
+        <br><br>    &lt;/ul&gt;
+       <br><br> &lt;/nav&gt;
+       <br><br> &lt;/header&gt;
+        
+       <br><br> &lt;body&gt;
+       <br><br>         &lt;section id="first"&gt;
+       <br><br>             &lt;h1&gt;Send us your email&lt;/h1&gt;
+       <br><br>     &lt;form id="form" action="https://www.freecodecamp.com/email-submit"&gt;
+      <br><br>          &lt;input 
+       <br><br>          id="email"
+       <br><br>          placeholder="Enter your Email" 
+       <br><br>          name="email" 
+       <br><br>          type="email"
+       <br><br>          required &gt;&lt;/input&gt;
+       <br><br>          &lt;input id="submit" type="submit" placeholder="submit"&gt; &lt;/input&gt; 
+        <br><br>        &lt;/form&gt;
+        
+       <br><br>         &lt;center&gt;  &lt;iframe id="video" class="video" width="700" height="400" src="https://www.youtube.com/embed/duoNstGmddE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
+       <br><br> &lt;/section&gt;
+       <br><br> &lt;div class="spacer"&gt;&lt;/div&gt;
+       <br><br> &lt;div class="content"&gt;
+       <br><br> &lt;section id="Science"&gt;&lt;h1&gt;Science&lt;/h1&gt;
+       <br><br>     &lt;p&gt;&lt;b&gt;Add your Description here&lt;/p&gt;
+       <br><br> &lt;/section&gt;
+        
+       <br><br> &lt;div class="spacer"&gt;&lt;/div&gt;
+       <br><br> &lt;section id="Math"&gt;
+       <br><br>     &lt;h1&gt;Mathematics&lt;/h1&gt;
+       <br><br>     &lt;p&gt;&lt;b&gt;Mathematics&lt;/b&gt; Description!!! &lt;/p&gt;
+      <br><br>  &lt;/section&gt;
+      <br><br>  &lt;section class="spacer"&gt;&lt;/section&gt;
+       <br><br> &lt;section id="Physics"&gt;&lt;h1&gt;Physical Science&lt;/h1&gt;&lt;p&gt;
+       <br><br> !!DESCRIPTION
+        <br><br>&lt;/p&gt;
+        
+      <br><br>  &lt;/section&gt;
+       <br><br> &lt;/div&gt;
+        
+            
+       <br><br> &lt;/body&gt;
+       <br><br> &lt;/html&gt;
+        </code>
+    </div>
+    <div class="code2">
+      <h2>CSS</h2>
+      <code>@media {
+       <br><br> body {
+       <br><br>     background-color: #eee;
+      <br><br>      font-family: 'Lato', sans-serif;
+        <br><br>    overflow-x: hidden;
+      <br><br>  }
+        
+       <br><br> #header{
+       <br><br>   padding:30px; width: 100%; max-height: 30px;
+       <br><br>   background-color: whitesmoke;  position: fixed; top:0; right: 0; left: 0; justify-content: space-between; align-items: center; display: flex;
+      <br><br>  }
+       <br><br> #header-img{
+       <br><br>   width: 300px; height:70px;   image-rendering: pixelated; image-resolution: 300dpi;
+      <br><br> }
+       <br><br> ul{
+      <br><br>    display: flex;
+      <br><br>    margin-right: 100px;
+       <br><br> }
+     <br><br>  li{
+         <br><br> list-style: none;
+       <br><br>   padding:30px;
+       <br><br> }
+       <br><br>  a:hover{
+       <br><br>   color:rgb(237, 56, 56);
+       <br><br> }
+        <br><br>a{
+       <br><br>   text-decoration: none;
+       <br><br>   display: flex;
+       <br><br>   font-size: 20px;
+       <br><br>   color: black;
+       <br><br> }
+       <br><br> .container {
+       <br><br>   display: flex;
+       <br><br>   max-width: 1000px;
+       <br><br>   width: 100%;
+       <br><br>   margin: 0 auto;
+       <br><br> }
+       <br><br> #first {
+       <br><br>   text-align: center;
+       <br><br>   margin-top:15%;
+       <br><br> }
+       <br><br> #video{
+       <br><br>   margin-top:5%;
+       <br><br> }
+       <br><br> #form {
+       <br><br>   size: 100px ;
+       <br><br> }
+       <br><br> h1{
+       <br><br>   font-size: 50px;
+       <br><br>  font-family: 'Times New Roman', Times, serif; font-weight: lighter;
+       <br><br> }
+        <br><br>form{
+          
+       <br><br> }
+       <br><br> .spacer{
+        <br><br>  padding:2rem;
+       <br><br> }
+       <br><br> .content{
+       <br><br>   padding:50px;  ; margin-right: 8rem; margin-left: 8rem; text-align: justify; font-family: 'Times New Roman'; line-height: 2; font-size: 1.rem;
+       <br><br> }
+       <br><br> .content h1{
+       <br><br>   margin-
+       <br><br> }
+       <br><br> }
+        </code>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer-line"></div>
+<div class="spacer3"></div>
+
+<div class="container">
+  <h1><a id="personal"></a>Personal Portfolio WebPage</h1>
+  <div class="box-img"><img src="5.png"></div>
+  <div class="spacer"></div>
+  <div class="code-box">
+    <div class="code1">
+      <h2>HTML</h2>
+      <code>
+        &lt;!DOCTYPE html&gt;
+<br><Br>&lt;html lang="en"&gt;
+<br><Br>&lt;head&gt;
+   <br><Br> &lt;meta charset="UTF-8"&gt;
+   <br><Br> &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    <br><Br>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    <br><Br>&lt;title&gt;Final Certificate&lt;/title&gt;
+    <br><Br>&lt;link rel="stylesheet" href="styles.css"&gt;
+<br><Br>&lt;/head&gt;
+<br><Br>&lt;header&gt;
+  <br><Br>  &lt;nav id="navbar"&gt;
+      <br><Br>  &lt;ul&gt;
+         <br><Br>   &lt;li&gt;&lt;a href="#welcome-section"&gt;About&lt;/a&gt;&lt;/li&gt;
+         <br><Br>   &lt;li&gt;&lt;a href="#2nd"&gt;Works&lt;/a&gt;&lt;/li&gt;
+          <br><Br>  &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+     <br><Br>   &lt;/ul&gt;
+    <br><Br>&lt;/nav&gt;
+<br><Br>&lt;/header&gt;
+<br><Br>&lt;body&gt;
+
+   <br><Br> &lt;section id="welcome-section"&gt;
+     <br><Br>   &lt;h1&gt;Hi I'm Jason Iso&lt;/h1&gt;
+   <br><Br>     &lt;p&gt;A Programming Student in Asian College&lt;/p&gt;
+  <br><Br>  &lt;/section&gt;
+
+
+    <br><Br>&lt;div class="box"&gt;
+      <br><Br>  &lt;h1 id="2nd"&gt;My Projects&lt;/h1&gt;    
+      <br><Br>  &lt;section id="projects"&gt;
+      <br><Br>  &lt;div class="project-grid "&gt;
+       <br><Br>     &lt;a&gt;&lt;img src="certificate1.png"&gt;&lt;/a&gt;
+       <br><Br>     &lt;img src="cert2.png"&gt;
+       <br><Br> &lt;/div&gt;
+       <br><Br> &lt;div class="project-tile"&gt; 
+        <br><Br>    &lt;a id="profile-link" target="_blank"&gt;&lt;/a&gt;&lt;img height="300" width="470" src="project.png"&gt;
+       <br><Br>     &lt;img height="300" width="470" src="projectfree.png"&gt;
+       <br><Br> &lt;/div&gt;
+<br><Br>&lt;/section&gt;
+
+
+
+<br><Br>&lt;section id="contact"&gt;
+  <br><Br>  &lt;h2&gt;Contacts&lt;/h2&gt;
+ <br><Br>   &lt;a href="https://www.google.com/gmail/about/" class="contact1"&gt;&lt;i class="fas fa-at"&gt;&lt;/i&gt;isojason123@gmail.com&lt;/a&gt;&lt;/section&gt;
+<br><Br>&lt;/div&gt;
+
+<br><Br>&lt;/body&gt;
+<br><Br>&lt;/html&gt;
+
+      </code>
+      </div>
+      <div class="code2">
+        <h2>CSS</h2>
+        <code>
+          @media {
+       <br><br>     html{
+          <br><br>      scroll-behavior: smooth;
+            
+        <br><br>    }
+        <br><br>    header{
+         <br><br>       padding: .5rem;
+         <br><br>       position: fixed;
+          <br><br>      display: flex;
+           <br><br>     background-color:rgb(252, 240, 240);
+          <br><br>      left: 0; right: 0; top: 0; z-index: 100;
+          <br><br>  justify-content: right;}
+         <br><br>   ul{
+         <br><br>       display: flex; 
+         <br><br>   }
+        <br><br>   li{
+        <br><br>        padding-right: 5rem; list-style-type:none;
+        <br><br>    }
+         <br><br>   a{
+         <br><br>       font-size: 2rem; text-decoration: none;
+         <br><br>       color:black;
+         <br><br>   }
+         <br><br>   a:hover {
+         <br><br>       color:red ;
+         <br><br>   }
+          <br><br>  body{
+          <br><br>      overflow-x: hidden;
+          <br><br>  }
+         <br><br>   #welcome-section{
+          <br><br>      padding: 50px;
+          <br><br>      text-align: center;
+          <br><br>      margin-bottom:2rem;
+          <br><br>  }
+          <br><br>  #welcome-section h1{
+          <br><br>  font-style: oblique;
+           <br><br> text-align: center;
+          <br><br>  font-size: 4rem;
+          <br><br>  margin-top: 18rem;
+          <br><br>  }
+          <br><br>  #welcome-section p{
+          <br><br>      margin-top: -3rem;
+          <br><br>      font-size: 1.1rem;
+          <br><br>  }
+           <br><br> #projects{
+         <br><br>       padding:50px;
+         <br><br>       margin-top: 18rem;
+          <br><br>  }
+          <br><br>  #projects h1{
+          <br><br>      font-size: 4rem;
+            <br><br>    text-align: center;
+              <br><br>  font-style: oblique;
+          <br><br>  }
+          <br><br>  #projects {
+             <br><br>   display: flex;
+            <br><br>    flex-wrap: wrap;
+            <br><br>    justify-content: center;
+            <br><br>  }
+            <br><br>  h1{
+             <br><br>   text-align: center;
+              <br><br>  font-size:4rem;
+             <br><br>   font-weight: lighter;
+             <br><br>   font-style: oblique;
+             <br><br>   z-index: 20 ;
+             <br><br>   margin-top: 6rem;
+             <br><br> }
+             <br><br> .project-grid img {
+              <br><br>  width: 100%;
+             <br><br>   height: 300px;
+             <br><br>   max-width: 470px;
+             <br><br>   margin: 10px;
+             <br><br>   margin-top: -18rem;
+              <br><br>  border-radius:10px ; 
+            <br><br>    border: 1px solid black;  
+            <br><br>  }
+             <br><br> .project-tile img{
+             <br><br>   border-radius:10px ; 
+             <br><br>   border: 1px solid black;    margin: 10px;
+            
+           <br><br>   }
+            <br><br>.box{
+            <br><br>    margin-top: 15rem;
+           <br><br>     background-color: rgb(241, 238, 235);
+            <br><br>    left: 0; right: 0;
+           <br><br>     position: absolute;
+            <br><br>    z-index: -2;
+          <br><br>  }
+          <br><br>  #contact {
+            <br><br>    background-color: #e3dcdc;
+            <br><br>    padding: 50px;
+            <br><br>    text-align: center;
+          <br><br>  }
+          <br><br>  #contact h2 {
+            <br><br>    font-size: 3rem;
+            <br><br>    margin-bottom: 1rem;
+           <br><br> }
+           <br><br> #contact p {
+           <br><br>     font-size: 1.5rem;
+           <br><br>     margin-bottom: 0.5rem;
+          <br><br>  }
+          <br><br>  #contact1 {
+          <br><br>      font-size: 2.4rem;
+         <br><br>       text-shadow: 2px 2px 1px #1f1f1f;
+          <br><br>      transition: transform 0.3s ease-out;
+         <br><br>     }
+            
+      <br><br>      }
+            
+            
+        </code>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="spacer"></div>
+<div class="spacer-line"></div>
+<div class="spacer3"></div>
+
+<div class="container">
+  <h1><a class="certificate" href="https://www.freecodecamp.org/certification/fccf1f7ffbf-b946-4250-95ba-e74fe2cf4e09/responsive-web-design">Certification</a></h1>
+  <div class="box-img">
+    <img src="Certification.png">
+  </div>
+  <div class="link"><li><a href="https://www.freecodecamp.org/certification/fccf1f7ffbf-b946-4250-95ba-e74fe2cf4e09/responsive-web-design"><ion-icon name="link-outline"></ion-icon> &nbsp; &nbsp;https://www.freecodecamp.org/certification/fccf1f7ffbf-b946-4250-95ba-e74fe2cf4e09/responsive-web-design</a></li></div>
+  
+</div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<footer>    
+  <p3><b>Copyright © 2023 My Website. All rights reserved </b></p3>         
+          <a href="https://www.facebook.com/isojason123"><ion-icon name="logo-facebook"></ion-icon>Jason</a>
+          <a href="https://mail.google.com/mail/u/0/"><ion-icon name="mail-open-sharp"></ion-icon>Isojason123</a>
+          <a href="#"><ion-icon name="call-sharp"></ion-icon>09091787933</a>     
+       </footer>
+</body>
+</body>
+</html>

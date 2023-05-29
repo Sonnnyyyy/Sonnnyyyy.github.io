@@ -1,0 +1,218 @@
+
+body{
+    background-color: rgb(239, 235, 240); 
+    margin: 0 ;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color:rgb(239, 233, 233);
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 10px;  
+    border-bottom: 2px solid rgb(94, 88, 88); 
+    position: absolute fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    max-height: 3.5rem;
+    width: 100%;
+}
+.Jason {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+ max-height:4rem;
+    max-width: 16rem; 
+    padding-right: 25rem;
+     padding-bottom: 1px;
+  }
+  .Jason img {
+    width:100% ;
+    box-shadow: 1px 2px 3px black;
+  }
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+}
+.header li {
+    padding-right: 30px;
+    size: 10px;
+}
+.header a {
+    text-decoration:none ;
+    font-size: 30px;
+    color: black;
+    transition: all 0.1s ease-in-out;
+    padding: 10px 20px 10px;
+    margin-right: 10px;
+}
+.header a:hover {
+    color: rgb(254, 50, 10);
+        text-decoration: overline;
+}
+footer {
+    background-color:rgb(207, 198, 198);
+    padding: 10px;
+    right: 0;
+    left: 0;
+    margin: 0;
+    position:absolute;
+    justify-content: center;
+    text-align: center;
+}
+footer a{
+    margin-right: 5%;
+    margin-left: 7%;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+}
+footer a:hover{
+    text-decoration: overline black;
+    color: black!important;
+}
+
+
+
+img  {
+    border-radius: 300px;
+    box-shadow: 0 0 5px rgb(70, 64, 64); 
+    margin-right: -170px;
+}
+.welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.welcome-section h1{
+    text-shadow: 0 0 1px black;
+    font-weight: lighter;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+}
+.spacer {
+padding: 20px;
+}
+.spacer-line{
+    border-bottom: 6px solid rgb(214, 209, 209) ;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.spacer3{
+    padding:50px;
+}
+
+.box-img{
+        display: flex;
+        justify-content: center;
+        margin-right: 190px;
+}
+.box-img img{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 9px rgb(157, 142, 142);
+}
+.container h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 48px;
+    text-shadow: 0 0 3px black;
+}
+.container .code-box{
+     display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.container .code1{
+    margin-right: 3%;
+    word-break:break-all ;
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    overflow-y: scroll;
+    box-shadow:  0 0 4px black, 0 0 5px blue, 0 0 6px purple;
+}
+.container .code2{
+    word-break:break-all ;
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    overflow-y: scroll;
+    box-shadow:  0 0 4px black, 0 0 5px blue, 0 0 6px purple;
+}
+.container .certificate{
+    color: blue;
+}
+.container .link{
+    text-align: center;
+    margin-top: 50px;
+    list-style: none;
+}
+.link a{
+    text-decoration: none;
+}
+.link a:hover{
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.container a:hover{
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+.code1 h2, .code2 h2{
+    text-decoration: underline;
+}
+
+
+.copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .copy-button::before {
+    content: "\f0c5"; /* Font Awesome copy icon */
+    font-family: "Font Awesome 5 Free";
+  }
+  
+  #text-to-copy {
+    padding-right: 24px; /* To make space for the copy button */
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
